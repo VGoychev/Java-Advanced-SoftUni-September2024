@@ -1,9 +1,9 @@
-package MultiDimensionalArrays.lab;
+package MultiDimensionalArrays.exercise;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _06_PrintDiagonalsOfSquareMatrix {
+public class _03_DiagonalDifference {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
@@ -13,23 +13,28 @@ public class _06_PrintDiagonalsOfSquareMatrix {
                     .mapToInt(Integer::parseInt).toArray();
             matrix[row] = array;
         }
-
+        int sumSecondary = 0;
+        int sumPrimary = 0;
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
                 int number = matrix[row][col];
                 if (row == col){
-                    System.out.print(number + " ");
+                    sumPrimary += number;
                 }
             }
         }
-
-        System.out.println();
         int col = 0;
         for (int row = matrix.length - 1; row >= 0; row--) {
             int number = matrix[row][col];
-            System.out.print(number + " ");
+            sumSecondary += number;
             col++;
         }
 
+        int difference = sumPrimary - sumSecondary;
+        if (difference < 0){
+            difference = difference * -1;
+        }
+
+        System.out.println(difference);
     }
 }
