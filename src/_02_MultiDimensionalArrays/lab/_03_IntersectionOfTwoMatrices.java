@@ -1,4 +1,4 @@
-package MultiDimensionalArrays.lab;
+package _02_MultiDimensionalArrays.lab;
 import java.util.Scanner;
 
 public class _03_IntersectionOfTwoMatrices {

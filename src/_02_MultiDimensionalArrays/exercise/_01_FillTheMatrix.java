@@ -1,6 +1,5 @@
-package MultiDimensionalArrays.exercise;
+package _02_MultiDimensionalArrays.exercise;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _01_FillTheMatrix {
