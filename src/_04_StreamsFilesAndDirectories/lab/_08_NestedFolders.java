@@ -2,7 +2,6 @@ package _04_StreamsFilesAndDirectories.lab;
 
 import java.io.File;
 import java.util.ArrayDeque;
-import java.util.Deque;
 
 public class _08_NestedFolders {
     public static void main(String[] args) {
