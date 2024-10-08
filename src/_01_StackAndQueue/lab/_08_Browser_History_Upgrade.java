@@ -7,9 +7,9 @@ public class _08_Browser_History_Upgrade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Stack for URLs visited
+        // CustomStack for URLs visited
         ArrayDeque<String> backStack = new ArrayDeque<>();
-        // Stack for URLs to go forward to
+        // CustomStack for URLs to go forward to
         ArrayDeque<String> forwardStack = new ArrayDeque<>();
 
         String input = scanner.nextLine();
