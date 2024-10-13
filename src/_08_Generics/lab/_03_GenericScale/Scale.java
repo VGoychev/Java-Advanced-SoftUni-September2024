@@ -13,7 +13,7 @@ public class Scale<T extends Comparable<T>> {
             return this.left;
         }
         if (this.left.compareTo(this.right) < 0){
-            return right;
+            return this.right;
         }
         return null;
     }
