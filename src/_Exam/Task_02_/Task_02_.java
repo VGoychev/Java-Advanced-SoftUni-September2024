@@ -25,6 +25,7 @@ public class Task_02_ {
         }
         return null;
     }
+
     private static void printMatrix(char[][] field) {
         for (char[] row : field){
             System.out.println(row);
